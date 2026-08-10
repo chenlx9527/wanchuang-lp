@@ -1,0 +1,31 @@
+{
+  "tracks": [
+    { "name": "硬科技/半导体", "keywords": ["半导体", "国产替代", "晶圆", "EDA", "芯片", "先进封装"] },
+    { "name": "大健康/医疗与生命科技", "keywords": ["医疗", "创新药", "医疗器械", "生物科技", "大健康"] },
+    { "name": "AI算力/光模块", "keywords": ["AI算力", "光模块", "CPO", "算力基建", "GPU", "英伟达"] },
+    { "name": "碳中和/新能源", "keywords": ["储能", "光伏", "电池", "氢能", "碳中和", "新能源"] },
+    { "name": "新材料", "keywords": ["新材料", "碳纤维", "特种合金", "高端材料"] },
+    { "name": "先进制造/具身智能", "keywords": ["机器人", "工业母机", "精密制造", "智能制造", "具身智能"] },
+    { "name": "商业航天", "keywords": ["商业航天", "火箭", "卫星", "发射", "可回收"] },
+    { "name": "低空经济/量子计算", "keywords": ["低空经济", "eVTOL", "无人机", "量子计算", "量子通信"] }
+  ],
+  "companies": ["中际旭创", "星际荣耀", "蓝箭", "星河动力", "天兵", "大航跃迁", "长鑫", "宇树", "本源量子", "国仪量子", "DeepSeek", "卫蓝"],
+  "sources": [
+    {
+      "name": "东方财富快讯",
+      "type": "jsonp",
+      "url": "https://newsapi.eastmoney.com/kuaixun/v1/getlist_102_ajaxResult_50_1_.html",
+      "prefix": "var ajaxResult=",
+      "list_key": "LivesList",
+      "title_key": "title",
+      "url_key": "url_unique",
+      "time_key": "showtime",
+      "digest_key": "digest"
+    },
+    {
+      "name": "投资界",
+      "type": "html",
+      "url": "https://news.pedaily.cn/"
+    }
+  ]
+}
